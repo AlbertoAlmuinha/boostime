@@ -968,7 +968,7 @@ auto_sarima_lightgbm_fit_impl <- function(x, y, period = "auto",
     )
     
     # Model Description - Gets printed to describe the high-level model structure
-    desc <- paste0(get_arima_description(fit_arima),
+    desc <- paste0(modeltime::get_arima_description(fit_arima),
                    ifelse(is.null(fit_lightgbm), "", " w/ LightGBM Errors"))
     
     # Create new model
@@ -1200,7 +1200,7 @@ sarima_lightgbm_fit_impl <- function(x, y, period = "auto",
     )
     
     # Model Description - Gets printed to describe the high-level model structure
-    desc <- paste0(get_arima_description(fit_arima),
+    desc <- paste0(modeltime::get_arima_description(fit_arima),
                    ifelse(is.null(fit_lightgbm), "", " w/ Catboost Errors"))
     
     # Create new model
