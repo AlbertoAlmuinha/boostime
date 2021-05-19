@@ -1,0 +1,62 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = F,
+  warning = F,
+  dpi = 200
+)
+```
+
+# boostime
+
+<img src="vignettes/logo-boostime.png" width="147" height="170" align="right"/>
+
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/boostime)](https://CRAN.R-project.org/package=boostime)
+[![Lifecycle:maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
+[![R-CMD-check](https://github.com/AlbertoAlmuinha/boostime/workflows/R-CMD-check/badge.svg)](https://github.com/AlbertoAlmuinha/boostime/actions)
+<!-- badges: end -->
+
+> The Tidymodels Extension for Time Series Boosting Models 
+
+## Tutorials
+
+- [__Getting Started with Boostime__](https://albertoalmuinha.github.io/boostime/articles/getting-started.html): A walkthrough of the tidy modeling approach with the package.
+
+## Installation
+
+Not on CRAN yet:
+
+``` r
+#install.packages("boostime")
+```
+
+Development version:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("AlbertoAlmuinha/boostime")
+```
+
+## Why Boostime?
+
+> Boostime unlocks boosting methods to improve modeling errors (residuals) on time series analysis.
+
+The following algorithms are available:
+
+- __Arima + Catboost__: You can use either an automatic version of Arima (auto.arima, in which orders are selected from KPSS unit root tests or the manual version) in conjunction with Catboost to model the residuals. One of the great advantages of this model over XGBoost is that it can deal with categorical variables and use GPUs.
+
+- __Prophet + Catboost__: It uses Prophet and Catboost to model the residuals. One advantage of Prophet over Arima is that it can handle multiple seasonalities.
+
+- __Arima + LightGBM__: You can use either an automatic version of Arima (auto.arima, in which orders are selected from KPSS unit root tests or the manual version) in conjunction with LightGBM to model the residuals.
+
+- __Prophet + LightGBM__: It uses Prophet and LightGBM to model the residuals. One advantage of Prophet over Arima is that it can handle multiple seasonalities.

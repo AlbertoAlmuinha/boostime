@@ -1,0 +1,49 @@
+Package: boostime
+Title: The Tidymodels Extension for Time Series Boosting Models 
+Version: 0.1.0
+Authors@R: c(
+    person("Alberto", "Almuiña", email = "albertogonzalezalmuinha@gmail.com", role = c("aut", "cre"))
+    )
+Description: The time series forecasting package using boosting to improve modeling errors (residuals). The methods 
+    available are: Arima-Catboost, Arima-LightGBM, Prophet-Catboost and Prophet-LightGBM.
+URL: https://github.com/AlbertoAlmuinha/boostime
+BugReports: https://github.com/AlbertoAlmuinha/boostime/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.5.0),
+    parsnip
+Imports: 
+    rlang (>= 0.1.2),
+    magrittr,
+    catboost,
+    lightgbm,
+    forecast,
+    prophet,
+    modeltime,
+    timetk,
+    purrr,
+    dplyr,
+    stringr,
+    tibble,
+    tidyr,
+    dials,
+    rsample,
+    workflows,
+    cli,
+    crayon,
+    rstudioapi
+Suggests: 
+    tidymodels,
+    tidyverse,
+    lubridate,
+    knitr,
+    rmarkdown,
+    roxygen2,
+    testthat (>= 3.0.0),
+    covr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
