@@ -492,7 +492,10 @@ auto_sarima_catboost_fit_impl <- function(x, y, period = "auto",
         args[["subsample"]] <- if (subsample > 1) 1 else subsample
         args[["learning_rate"]] <- eta
         args[["depth"]] <- depth
-        args[["rsm"]] <- if (rsm > 1) 1 else rsm/ncol(x)
+        
+        if (!any(names(args) %in% "task_type")){
+            args[["rsm"]] <- if (rsm > 1) 1 else rsm/ncol(x)
+        }
         
         train_args <- list()
         
@@ -669,7 +672,10 @@ sarima_catboost_fit_impl <- function(x, y, period = "auto",
         args[["subsample"]] <- if (subsample > 1) 1 else subsample
         args[["learning_rate"]] <- eta
         args[["depth"]] <- depth
-        args[["rsm"]] <- if (rsm > 1) 1 else rsm/ncol(x)
+        
+        if (!any(names(args) %in% "task_type")){
+            args[["rsm"]] <- if (rsm > 1) 1 else rsm/ncol(x)
+        }
         
         train_args <- list()
         
