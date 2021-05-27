@@ -47,7 +47,8 @@ The following algorithms are available:
     Arima (auto.arima, in which orders are selected from KPSS unit root
     tests or the manual version) in conjunction with Catboost to model
     the residuals. One of the great advantages of this model over
-    XGBoost is that it can deal with categorical variables and use GPUs.
+    XGBoost is that it can deal with categorical variables and you can
+    use GPU without any configuration effort.
 
 -   **Prophet + Catboost**: It uses Prophet and Catboost to model the
     residuals. One advantage of Prophet over Arima is that it can handle

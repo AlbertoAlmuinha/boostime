@@ -53,7 +53,7 @@ devtools::install_github("AlbertoAlmuinha/boostime")
 
 The following algorithms are available:
 
-- __Arima + Catboost__: You can use either an automatic version of Arima (auto.arima, in which orders are selected from KPSS unit root tests or the manual version) in conjunction with Catboost to model the residuals. One of the great advantages of this model over XGBoost is that it can deal with categorical variables and use GPUs.
+- __Arima + Catboost__: You can use either an automatic version of Arima (auto.arima, in which orders are selected from KPSS unit root tests or the manual version) in conjunction with Catboost to model the residuals. One of the great advantages of this model over XGBoost is that it can deal with categorical variables and you can use GPU without any configuration effort.
 
 - __Prophet + Catboost__: It uses Prophet and Catboost to model the residuals. One advantage of Prophet over Arima is that it can handle multiple seasonalities.
 
