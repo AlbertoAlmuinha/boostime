@@ -27,8 +27,8 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
     Introduction to Boostime with a practical example using ARIMA and
     Catboost.
 
--   [Hyperparameter Tuning with
-    Boostime](https://albertoalmuinha.com/posts/2021-06-19-boostime-tuning/parameter-tuning-boostime/)
+-   [**Hyperparameter Tuning with
+    Boostime**](https://albertoalmuinha.com/posts/2021-06-19-boostime-tuning/parameter-tuning-boostime/)
     Learn how to select the best hyperparameters for the Boostime
     algorithms.
 
