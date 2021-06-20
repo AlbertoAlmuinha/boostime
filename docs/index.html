@@ -87,22 +87,23 @@
 <a href="#boostime" class="anchor"></a>boostime</h1></div>
 <p><img src="articles/logo-boostime.png" width="147" height="170" align="right"></p>
 <!-- badges: start -->
-<p><a href="https://CRAN.R-project.org/package=boostime"><img src="https://www.r-pkg.org/badges/version/boostime" alt="CRAN status"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle:maturing"></a> <a href="https://github.com/AlbertoAlmuinha/boostime/actions"><img src="https://github.com/AlbertoAlmuinha/boostime/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <!-- badges: end --></p>
+<p><a href="https://CRAN.R-project.org/package=boostime"><img src="https://www.r-pkg.org/badges/version/boostime" alt="CRAN status"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a> <a href="https://github.com/AlbertoAlmuinha/boostime/actions"><img src="https://github.com/AlbertoAlmuinha/boostime/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <!-- badges: end --></p>
 <blockquote>
 <p>The Tidymodels Extension for Time Series Boosting Models</p>
 </blockquote>
-<div id="tutorials" class="section level2">
+<div id="tutorials-" class="section level2">
 <h2 class="hasAnchor">
-<a href="#tutorials" class="anchor"></a>Tutorials</h2>
+<a href="#tutorials-" class="anchor"></a>Tutorials 📚</h2>
 <ul>
-<li>
-<a href="https://albertoalmuinha.github.io/boostime/articles/getting-started.html"><strong>Getting Started with Boostime</strong></a>: A walkthrough of the tidy modeling approach with the package.</li>
+<li><p><a href="https://albertoalmuinha.github.io/boostime/articles/getting-started.html"><strong>Getting Started with Boostime</strong></a>: A walkthrough of the tidy modeling approach with the package.</p></li>
+<li><p><a href="https://albertoalmuinha.com/posts/2021-05-30-boostime_arima_catboost/boostime-arima-catboost/"><strong>Boostime: Combining ARIMA with Catboost</strong></a> Introduction to Boostime with a practical example using ARIMA and Catboost.</p></li>
+<li><p><a href="https://albertoalmuinha.com/posts/2021-06-19-boostime-tuning/parameter-tuning-boostime/">Hyperparameter Tuning with Boostime</a> Learn how to select the best hyperparameters for the Boostime algorithms.</p></li>
 </ul>
 </div>
-<div id="installation" class="section level2">
+<div id="installation-️" class="section level2">
 <h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>Not on CRAN yet:</p>
+<a href="#installation-%EF%B8%8F" class="anchor"></a>Installation ⚙️</h2>
+<p>Not on CRAN yet (and predictably won’t be because Catboost doesn’t look like it’s going to be any time soon)</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co">#install.packages("boostime")</span></code></pre></div>
 <p>Development version:</p>
@@ -110,9 +111,9 @@
 <code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"AlbertoAlmuinha/boostime"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="why-boostime" class="section level2">
+<div id="why-boostime-" class="section level2">
 <h2 class="hasAnchor">
-<a href="#why-boostime" class="anchor"></a>Why Boostime?</h2>
+<a href="#why-boostime-" class="anchor"></a>Why Boostime? 📊</h2>
 <blockquote>
 <p>Boostime unlocks boosting methods to improve modeling errors (residuals) on time series analysis.</p>
 </blockquote>
@@ -123,6 +124,16 @@
 <li><p><strong>Arima + LightGBM</strong>: You can use either an automatic version of Arima (auto.arima, in which orders are selected from KPSS unit root tests or the manual version) in conjunction with LightGBM to model the residuals.</p></li>
 <li><p><strong>Prophet + LightGBM</strong>: It uses Prophet and LightGBM to model the residuals. One advantage of Prophet over Arima is that it can handle multiple seasonalities.</p></li>
 </ul>
+</div>
+<div id="acknowledgments-" class="section level2">
+<h2 class="hasAnchor">
+<a href="#acknowledgments-" class="anchor"></a>Acknowledgments 👏</h2>
+<p>I would especially like to thank Matt Dancho for his contribution to the world of time series, in particular for the creation of the <a href="https://github.com/business-science/modeltime">Modeltime</a> package. Without this package, <strong>Boostime</strong> would never have been possible. THANKS!</p>
+</div>
+<div id="contact-" class="section level2">
+<h2 class="hasAnchor">
+<a href="#contact-" class="anchor"></a>Contact ✉</h2>
+<p>Alberto Almuiña, <a href="https://www.linkedin.com/in/alberto-almui%C3%B1a-b1176881/">Linkedin</a>, <a href="https://twitter.com/AlmuinaAlberto">Twitter</a>, <a href="https://github.com/AlbertoAlmuinha">Github</a>, <a href="https://albertoalmuinha.com/es/">Blog</a>.</p>
 </div>
 </div>
   </div>
