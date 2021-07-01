@@ -34,7 +34,7 @@ knitr::opts_chunk$set(
 
 - [__Boostime: Combining ARIMA with Catboost__](https://albertoalmuinha.com/posts/2021-05-30-boostime_arima_catboost/boostime-arima-catboost/) Introduction to Boostime with a practical example using ARIMA and Catboost.
 
-- [__Hyperparameter Tuning with Boostime__](https://albertoalmuinha.com/posts/2021-06-19-boostime-tuning/parameter-tuning-boostime/) Learn how to select the best hyperparameters for the Boostime algorithms.
+- [__Hyperparameter Tuning with Boostime__](https://albertoalmuinha.com/posts/2021-06-28-boostime-tuning/parameter-tuning-boostime/) Learn how to select the best hyperparameters for the Boostime algorithms.
 
 ## Installation ⚙️
 

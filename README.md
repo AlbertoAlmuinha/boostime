@@ -28,7 +28,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
     Catboost.
 
 -   [**Hyperparameter Tuning with
-    Boostime**](https://albertoalmuinha.com/posts/2021-06-19-boostime-tuning/parameter-tuning-boostime/)
+    Boostime**](https://albertoalmuinha.com/posts/2021-06-28-boostime-tuning/parameter-tuning-boostime/)
     Learn how to select the best hyperparameters for the Boostime
     algorithms.
 
