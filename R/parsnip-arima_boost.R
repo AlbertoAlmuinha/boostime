@@ -294,12 +294,6 @@ update.boost_arima <- function(object,
                                tree_depth = NULL, learn_rate = NULL, mtry = NULL, trees = NULL, min_n = NULL,
                                sample_size = NULL, loss_reduction = NULL, fresh = FALSE, ...) {
     
-    parsnip::update_dot_check(...)
-    
-    if (!is.null(parameters)) {
-        parameters <- parsnip::check_final_param(parameters)
-    }
-    
     args <- list(
         
         # ARIMA
@@ -321,26 +315,16 @@ update.boost_arima <- function(object,
         loss_reduction            = rlang::enquo(loss_reduction)
     )
     
-    args <- parsnip::update_main_parameters(args, parameters)
-    
-    if (fresh) {
-        object$args <- args
-    } else {
-        null_args <- purrr::map_lgl(args, parsnip::null_value)
-        if (any(null_args))
-            args <- args[!null_args]
-        if (length(args) > 0)
-            object$args[names(args)] <- args
-    }
-    
-    parsnip::new_model_spec(
-        "boost_arima",
-        args     = object$args,
-        eng_args = object$eng_args,
-        mode     = object$mode,
-        method   = NULL,
-        engine   = object$engine
+    parsnip::update_spec(
+        object = object,
+        parameters = parameters,
+        args_enquo_list = args,
+        fresh = fresh,
+        cls = "boost_arima",
+        ...
     )
+    
+
 }
 
 
